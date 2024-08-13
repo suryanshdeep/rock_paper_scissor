@@ -1,11 +1,63 @@
-<html>
-    <head>
-        <title>
-            Rock paper scissor
-        </title>
-    </head>
-    <body>
-        <script src="script.js">
-    </script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .button-container {
+            margin: 20px 0;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #007bff;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        button:active {
+            background-color: #004080;
+        }
+        #result, #final {
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #result {
+            background-color: #e9ecef;
+            color: #333;
+        }
+        #final {
+            background-color: #d4edda;
+            color: #155724;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button id="rock">Rock</button>
+    <button id="scissor">Scissors</button>
+    <button id="paper">Paper</button>
+    <div id="result"></div>
+    <div id="final">@odin </div>
+    <script src="script.js"></script>
+</body>
 </html>
